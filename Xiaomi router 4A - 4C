@@ -1,0 +1,15 @@
+Installer WSL :
+
+wsl --install
+
+Crack OPENWRT :
+
+sudo apt install python3
+git clone https://github.com/acecilia/OpenWRTInvasion
+cd OpenWRTInvasion
+pip3 install -r requirements.txt
+python3 remote_command_execution_vulnerability.py
+telnet 192.168.31.1
+cd /tmp
+wget https://downloads.openwrt.org/releases/23.05.3/targets/ramips/mt7621/openwrt-23.05.3-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin
+mtd -r write /tmp/openwrt-23.05.3-ramips-mt7621-xiaomi_mi-router-4a-gigabit-squashfs-sysupgrade.bin OS1
