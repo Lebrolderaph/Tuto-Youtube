@@ -2,6 +2,8 @@ Installer WSL :
 
 wsl --install
 
+------------------------------------------------------------------
+
 Crack OPENWRT :
 
 sudo apt install python3
